@@ -1,0 +1,77 @@
+			------------------------------CREATE DATABASE AND SIGN-UP TABLE------------------------
+
+Create database lms;
+use lms;
+create table signup(
+	username varchar(50) primary key,
+	email varchar(50),
+	password  varchar(50)
+	);
+
+			--------------------------------CREATE TABLE OF MEMBERS-----------------------------------------
+
+mysql> create table members(
+	-> member_id int primary key, 
+	-> name varchar(255),
+	-> email varchar(255),
+	-> phone varchar(20), 
+	-> address text, 
+	-> membership_date date
+	-> );
+		
+			-----------------------------CREATE TABLE FOR BOOK ISSUE CARD---------------------------------------
+
+mysql> create table book_issue_card(
+	-> book_id int(20) primary key,
+	-> book_title varchar(200),
+	-> author_name varchar(200), 
+	-> student_id int(20), 
+	-> student_name varchar(200),
+	-> issue_date date, 
+	-> return_date date
+	-> ); 
+			----------------------------CREATE TABLE FOR SEARCH BOOKS---------------------------------------
+CREATE DATABASE IF NOT EXISTS lms;
+USE lms;
+
+CREATE TABLE IF NOT EXISTS CS_IT (
+    book_id INT AUTO_INCREMENT PRIMARY KEY,
+    book_name VARCHAR(255),
+    author_name VARCHAR(255),
+    quantity INT
+);
+
+CREATE TABLE IF NOT EXISTS Electronics (
+    book_id INT AUTO_INCREMENT PRIMARY KEY,
+    book_name VARCHAR(255),
+    author_name VARCHAR(255),
+    quantity INT
+);
+
+CREATE TABLE IF NOT EXISTS Mechanical (
+    book_id INT AUTO_INCREMENT PRIMARY KEY,
+    book_name VARCHAR(255),
+    author_name VARCHAR(255),
+    quantity INT
+);
+
+CREATE TABLE IF NOT EXISTS BCA (
+    book_id INT AUTO_INCREMENT PRIMARY KEY,
+    book_name VARCHAR(255),
+    author_name VARCHAR(255),
+    quantity INT
+);
+
+CREATE TABLE IF NOT EXISTS BSc (
+    book_id INT AUTO_INCREMENT PRIMARY KEY,
+    book_name VARCHAR(255),
+    author_name VARCHAR(255),
+    quantity INT
+);
+
+CREATE TABLE IF NOT EXISTS Pharmacy (
+    book_id INT AUTO_INCREMENT PRIMARY KEY,
+    book_name VARCHAR(255),
+    author_name VARCHAR(255),
+    quantity INT
+);
